@@ -14,8 +14,8 @@ public class calculateController {
     }
 
     @PostMapping("/caculate")
-    public String caculte(ModelMap modelMap, @RequestParam (value = "firstOperand",defaultValue ="0") float firstOperand,
-                          @RequestParam (value = "secondOperand",defaultValue = "0") float secondOperand,
+    public String caculte(ModelMap modelMap, @RequestParam (value = "firstOperand",defaultValue ="0") double firstOperand,
+                          @RequestParam (value = "secondOperand",defaultValue = "0") double secondOperand,
                           @RequestParam("operator") String operator) {
 
 
@@ -23,7 +23,7 @@ public class calculateController {
             modelMap.addAttribute("result","Error!");
             return "index";
         } else {
-            float result = Caculate.calculate(firstOperand,secondOperand,operator);
+            double result = Caculate.calculate(firstOperand,secondOperand,operator);
             modelMap.addAttribute("result",result);
         }
 

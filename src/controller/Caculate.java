@@ -1,15 +1,15 @@
 package controller;
 
 public class Caculate {
-    public static float calculate(float firstOperand, float secondOperand, String operator) {
+    public static double calculate(double firstOperand, double secondOperand, String operator) {
         switch (operator) {
-            case "+":
+            case "Addition (+)":
                 return firstOperand + secondOperand;
-            case "-":
+            case "Subtraction (-)":
                 return firstOperand - secondOperand;
-            case "x":
+            case "Multiple (X)":
                 return firstOperand * secondOperand;
-            case "/":
+            case "Division (/)":
                 return firstOperand / secondOperand;
             default:
                 throw new RuntimeException("Invalid operation");

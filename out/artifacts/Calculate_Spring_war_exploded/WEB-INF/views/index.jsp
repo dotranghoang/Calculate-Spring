@@ -17,18 +17,18 @@
     <table>
       <tr>
         <td>First Operand:</td>
-        <td><input type="number" name="firstOperand" value="${firstOperand}"></td>
+        <td><input type="text" name="firstOperand" value="${firstOperand}"></td>
       </tr>
       <tr>
         <td>Second Operand:</td>
-        <td><input type="number" name="secondOperand" value="${secondOperand}"></td>
+        <td><input type="text" name="secondOperand" value="${secondOperand}"></td>
       </tr>
       <td></td>
       <td>
-        <input type="submit" name="operator" value="+">
-        <input type="submit" name="operator" value="-">
-        <input type="submit" name="operator" value="x" >
-        <input type="submit" name="operator" value="/" >
+        <input type="submit" name="operator" value="Addition (+)">
+        <input type="submit" name="operator" value="Subtraction (-)">
+        <input type="submit" name="operator" value="Multiple (X)" >
+        <input type="submit" name="operator" value="Division (/)" >
       </td>
       <tr>
         <td>Result: </td>
